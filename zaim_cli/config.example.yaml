@@ -1,0 +1,31 @@
+# Zaim CLI 設定ファイル例
+# このファイルを ~/.zaim-cli/config.yaml としてコピーして使用してください
+
+# 表示設定
+display:
+  # 通貨フォーマット: "yen" または "symbol"
+  currency_format: yen
+  
+  # 取引件数を表示するかどうか
+  show_transaction_count: true
+  
+  # テーブルスタイル: "simple", "grid", "fancy_grid", "pipe", "orgtbl", "rst", "mediawiki", "html"
+  table_style: simple
+
+# 動作設定
+behavior:
+  # 取引作成時に確認を求めるかどうか
+  confirm_transactions: true
+  
+  # 自動バックアップ機能（未実装）
+  auto_backup: false
+  
+  # デフォルトのコメントプレフィックス
+  default_comment_prefix: CLI
+
+# 認証設定（オプション - 通常は環境変数を使用）
+# auth:
+#   consumer_key: your_consumer_key
+#   consumer_secret: your_consumer_secret
+#   access_token: your_access_token
+#   access_token_secret: your_access_token_secret
